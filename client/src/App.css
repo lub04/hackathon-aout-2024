@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: "CreatingBalance";
   src: url("./assets/CreatingBalance.ttf") format("TrueType");
@@ -10,4 +11,8 @@
 @font-face {
   font-family: "Sunflower";
   src: url("./assets/Sunflower.otf") format("OpenType");
+
+a {
+  text-decoration: none;
+  color: white;
 }
