@@ -20,7 +20,7 @@
     background-color: rgba(9, 148, 148);
     cursor: pointer;
   }
-  .continent-filter:focus {
+  .continent-filter-selected {
     color: white;
     background-color: rgba(9, 148, 148);
     cursor: pointer;
