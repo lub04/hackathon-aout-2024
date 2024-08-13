@@ -1,19 +1,32 @@
+import { useState } from "react";
+
 import DestinationCard from "../../components/DestinationCard/DestinationCard";
+import FilterComponent from "../../components/FilterComponents/FilterComponent";
 
 import destinations from "../../../data";
 import "./AllDestinations.css";
 
 function AllDestination() {
-  const allExeptParis = destinations.filter(
-    (destination) => destination.City !== "Paris"
+  const [continentFilter, setContinentFilter] = useState(
+    "Toutes les destinations"
+  );
+
+  const filteredDestinations = destinations.filter(
+    (destination) =>
+      destination.City !== "Paris" &&
+      (continentFilter === "Toutes les destinations" ||
+        destination.Region === continentFilter)
   );
 
   return (
-    <main className="all-destination">
-      {allExeptParis.map((destination) => (
-        <DestinationCard key={destination.id} city={destination} />
-      ))}
-    </main>
+    <>
+      <FilterComponent setContinentFilter={setContinentFilter} />
+      <section className="all-destination">
+        {filteredDestinations.map((destination) => (
+          <DestinationCard key={destination.id} city={destination} />
+        ))}
+      </section>
+    </>
   );
 }
 

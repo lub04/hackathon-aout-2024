@@ -78,7 +78,7 @@ const destinations = [
   },
   {
     id: 3,
-    City: "Londre",
+    City: "Londres",
     image1:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl_iN0ZX3t5KcbvzJnzNHZmxwTXPx2iy_BVg&s",
     image2:
@@ -833,7 +833,7 @@ const destinations = [
     Longitude: 144.9631732,
   },
   {
-    id: 32,
+    id: 23,
     City: "Auckland",
     image1:
       "https://images.ctfassets.net/bth3mlrehms2/1uneRYZMEI1CojLQ02xfSw/a002e1468e20182993b4bc8425e298b1/Nouvelle-Ze__lande__Auckland__Skyline.jpg?w=1047&h=595&fl=progressive&q=50&fm=jpg",
@@ -844,7 +844,7 @@ const destinations = [
     Air_Quality_Index: 35,
     Happiness_Score: 8.1,
     Cost_of_Living_Index: 100,
-    Region: "Australie/Pacifique  Sud",
+    Region: "Australie/Pacifique Sud",
     Country: "Nouvelle-Zélande",
     image_country:
       "https://www.hostelworld.com/blog/wp-content/uploads/2018/11/NZ-weather.jpg",
@@ -2113,7 +2113,7 @@ const destinations = [
     Air_Quality_Index: 35,
     Happiness_Score: 8.2,
     Cost_of_Living_Index: 60,
-    Region: "South/Central America & Carribean",
+    Region: "Amérique du Sud/Centrale et Caraïbes",
     Country: "Bermude",
     image_country:
       "https://www.costakreuzfahrten.ch/content/dam/costa/costa-magazine/articles-magazine/islands/bermuda-island/bermuda_m.jpg.image.694.390.low.jpg",
