@@ -1,6 +1,7 @@
 import DestinationCard from "../../components/DestinationCard/DestinationCard";
 import FilterComponent from "../../components/FilterComponents/FilterComponent";
 import FilterBar from "../../components/Header/FilterBar";
+import Footer from "../../components/Footer/Footer";
 
 import { useHackathon } from "../../context/HackathonContext";
 
@@ -37,6 +38,8 @@ function AllDestination() {
           ))}
         </section>
       )}
+
+      <Footer />
     </>
   );
 }
