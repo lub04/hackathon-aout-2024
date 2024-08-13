@@ -7,7 +7,7 @@ function DestinationCard({ city }) {
     <Link to={`/destinations/${city.id}`} className="destination-card">
       <img
         className="img-movie box"
-        src={city.image_country}
+        src={city.image1}
         alt={city.City}
         title={city.Region}
       />
