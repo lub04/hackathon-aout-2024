@@ -18,3 +18,8 @@
   background-color: rgba(9, 148, 148);
   cursor: pointer;
 }
+.continent-filter:focus {
+  color: white;
+  background-color: rgba(9, 148, 148);
+  cursor: pointer;
+}
