@@ -6,17 +6,6 @@ main {
   box-sizing: border-box;
 }
 
-.title-container {
-  text-align: center;
-  margin-bottom: 2rem;
-  width: 100%;
-}
-
-.title-container h1 {
-  font-size: 2rem;
-  margin: 0;
-}
-
 .main-contentainer {
   display: grid;
   grid-template-columns: 20% 1fr;
@@ -64,7 +53,7 @@ article {
   font-size: 1.2rem;
   color: rgba(9, 148, 148, 0.7);
 }
-h2 {
+.h2City {
   font-size: 2rem;
   color: rgba(9, 148, 148, 0.7);
 }
@@ -88,7 +77,7 @@ h2 {
     margin-top: 2rem;
     color: rgba(9, 148, 148, 0.7);
   }
-  h2 {
+  .h2Country {
     font-size: 1.5rem;
     color: rgba(9, 148, 148, 0.7);
   }
@@ -105,7 +94,7 @@ h2 {
 .img-city-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 2rem;
   gap: 1rem;
 }
 
@@ -127,8 +116,18 @@ h2 {
 .city-details-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 8rem;
   img {
-    max-height: 3rem;
-    max-width: 4rem;
+    max-height: 2.5rem;
+    max-width: 3rem;
   }
+  .NumberKey {
+    font-size: 2rem;
+  }
+}
+
+.icon-number-container {
+  display: flex;
+  margin-top: 0.5rem;
+  gap: 2rem;
 }
