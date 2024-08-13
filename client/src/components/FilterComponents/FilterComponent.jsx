@@ -2,7 +2,7 @@ import "./FilterComponent.css";
 import { useHackathon } from "../../context/HackathonContext";
 
 function FilterComponent() {
-  const { setContinentFilter, continents } = useHackathon();
+  const { setContinentFilter, continents, continentFilter } = useHackathon();
 
   return (
     <section className="filter-box">
@@ -11,7 +11,11 @@ function FilterComponent() {
         aria-label="Toutes les destinations"
         type="button"
         value="Toutes les destinations"
-        className="continent-filter"
+        className={
+          continentFilter === "Toutes les destinations"
+            ? "continent-filter-selected"
+            : "continent-filter"
+        }
       />
       {continents.map((continent) => (
         <button
@@ -19,7 +23,11 @@ function FilterComponent() {
           key={continent}
           aria-label={continent}
           type="button"
-          className="continent-filter"
+          className={
+            continentFilter === continent
+              ? "continent-filter-selected"
+              : "continent-filter"
+          }
         >
           {continent}
         </button>

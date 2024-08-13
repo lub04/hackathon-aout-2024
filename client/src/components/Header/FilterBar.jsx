@@ -13,8 +13,8 @@ function FilterBar() {
   } = useHackathon();
   const navigate = useNavigate();
   const handleSubmit = (e) => {
-    e.preventDefault(); // Empêche le rechargement de la page
-    navigate("/Destinations"); // Navigue vers la page des destinations
+    e.preventDefault();
+    navigate("/Destinations");
   };
 
   return (
@@ -42,7 +42,7 @@ function FilterBar() {
             ))}
           </select>
           <fieldset>
-            <legend>Budget à la semaine</legend>
+            <legend>Budget hebdomadaire</legend>
             <input
               id="budget"
               type="range"

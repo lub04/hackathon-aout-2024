@@ -17,19 +17,16 @@
   }
 }
 
-/* Cible les cartes précédant la carte survolée */
 :has(.destination-card:hover) > .destination-card:not(:hover) {
-  transform: scale(0.8);
+  transform: scale(0.9);
   opacity: 0.6;
 }
 .destination-card:hover {
   transform: scale(1.2);
   opacity: 1;
-  z-index: 10; /* Optionnel pour mettre la carte survolée au-dessus des autres */
+  z-index: 10;
 }
-/* Maintient la carte survolée à sa taille normale */
 
-/* Transition pour un effet plus fluide */
 .destination-card {
   transition:
     transform 0.7s ease,
