@@ -1,14 +1,9 @@
 import "./FilterComponent.css";
+import { useHackathon } from "../../context/HackathonContext";
 
-function FilterComponent({ setContinentFilter }) {
-  const continents = [
-    "Amerique du nord",
-    "Europe",
-    "Asie",
-    "Australie/Pacifique Sud",
-    "Moyen-Orient",
-    "Amérique du Sud/Centrale et Caraïbes",
-  ];
+function FilterComponent() {
+  const { setContinentFilter, continents } = useHackathon();
+
   return (
     <section className="filter-box">
       <input
