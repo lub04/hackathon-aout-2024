@@ -1,4 +1,4 @@
-const destination = [
+const destinations = [
   {
     id: 1,
     City: "Los Angeles",
@@ -2544,4 +2544,4 @@ const destination = [
   },
 ];
 
-export default destination;
+export default destinations;
