@@ -41,6 +41,7 @@
       flex-wrap: wrap;
       justify-content: space-around;
       gap: 2rem;
+
       fieldset {
         background-color: rgba(9, 148, 148, 0.7);
         border-radius: 0.5rem;
@@ -54,6 +55,10 @@
         margin-top: 10px;
         border-radius: 0.5rem;
         width: 18rem;
+        cursor: pointer;
+      }
+      .input-field:hover {
+        background-color: rgba(9, 148, 148);
       }
       .submit-button {
         display: flex;
