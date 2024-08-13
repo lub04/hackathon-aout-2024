@@ -1,0 +1,104 @@
+.presentation,
+.carousel-container {
+  width: 80%;
+  max-width: 80rem;
+  margin: 5rem auto;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.presentation h2 {
+  font-size: 2rem;
+  color: rgba(9, 148, 148, 0.7);
+  margin-bottom: 1.25rem;
+  font-family: "Sunflower";
+}
+
+.presentation-description {
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+  font-family: "DelicateCaligraphyDemo";
+
+  font-size: 1.5rem;
+}
+
+.carousel-container h3 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  color: rgba(9, 148, 148, 0.7);
+  font-family: "Sunflower";
+}
+
+.carousel-container p {
+  line-height: 1.6;
+  color: #555;
+}
+.carousel-container h4 {
+  font-family: "DelicateCaligraphyDemo";
+  font-size: 1.5rem;
+}
+.carousel-slide {
+  position: relative;
+  text-align: center;
+}
+
+.carousel-slide img {
+  width: 100%;
+  min-height: 15rem;
+  max-height: 10rem;
+  object-fit: cover;
+  background-size: contain;
+  border-radius: 0.625rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-slide img:hover {
+  transform: scale(1.05);
+}
+
+.carousel-title {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(9, 148, 148, 0.7);
+  color: #fff;
+  padding: 0.5rem 0.938rem;
+  border-radius: 0.313rem;
+  font-size: 1.125rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 1.5rem;
+  color: #30b7e9;
+}
+
+/* Points de navigation */
+.slick-dots li button:before {
+  font-size: 0.75rem;
+  color: #30b7e9;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #30b7e9;
+}
+@media (max-width: 390px) {
+  .presentation,
+  .carousel-container {
+    width: 90%;
+    max-width: 50rem;
+    margin: 5rem auto;
+    padding: 1rem 3rem;
+  }
+  .carousel-slide img {
+    width: 100%;
+    min-height: 15rem;
+    max-height: 8rem;
+  }
+}
