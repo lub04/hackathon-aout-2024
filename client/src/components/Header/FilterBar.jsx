@@ -21,7 +21,9 @@ function FilterBar() {
     <div className="app-homepage">
       <nav className="header">
         <img className="logo-homepage" src={logo} alt="Logo" />
-        <h2 className="logo">BougeTonQ.com</h2>
+        <a href="/">
+          <h2 className="logo">BougeTonQ.com</h2>
+        </a>
       </nav>
       <header className="main-content">
         <h1 className="main-title">Let's trip</h1>
