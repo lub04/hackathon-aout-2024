@@ -63,11 +63,18 @@ function Carousel() {
           arrows={settings.arrows}
           responsive={settings.responsive}
         >
-          {shuffledDestinations.map((destination, index) => (
-            <div key={destination.id} className="carousel-slide">
-              <img src={destination.image1} alt={`Slide ${index + 1}`} />
+          {shuffledDestinations.map((destination) => (
+            <a
+              key={destination.id}
+              href={`/destinations/${destination.id}`}
+              className="carousel-slide"
+            >
+              <img
+                src={destination.image1}
+                alt={`Destination ${destination.City}`}
+              />
               <h4 className="carousel-title">{destination.City}</h4>
-            </div>
+            </a>
           ))}
         </Slider>
       </div>
