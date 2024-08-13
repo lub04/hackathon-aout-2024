@@ -12,6 +12,10 @@
   font-family: "Sunflower";
   src: url("./assets/Sunflower.otf") format("OpenType");
 }
+@font-face {
+  font-family: "LoveYaLikeASister";
+  src: url("./assets/LoveYaLikeASister.ttf") format("TrueType");
+}
 
 a {
   text-decoration: none;
