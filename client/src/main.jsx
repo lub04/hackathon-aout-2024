@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import AllDestination from "./pages/AllDestinations/AllDestination";
+import { HackathonProvider } from "./context/HackathonContext";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HackathonProvider>
+      <RouterProvider router={router} />
+    </HackathonProvider>
   </React.StrictMode>
 );

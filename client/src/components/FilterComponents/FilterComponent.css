@@ -5,6 +5,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 15;
+
   .continent-filter {
     width: 100%;
     height: 2.5rem;
@@ -12,14 +16,14 @@
     background-color: white;
     border: 1px solid rgb(9, 148, 148);
   }
-}
-.continent-filter:hover {
-  color: white;
-  background-color: rgba(9, 148, 148);
-  cursor: pointer;
-}
-.continent-filter:focus {
-  color: white;
-  background-color: rgba(9, 148, 148);
-  cursor: pointer;
+  .continent-filter:hover {
+    color: white;
+    background-color: rgba(9, 148, 148);
+    cursor: pointer;
+  }
+  .continent-filter:focus {
+    color: white;
+    background-color: rgba(9, 148, 148);
+    cursor: pointer;
+  }
 }
