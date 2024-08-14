@@ -11,6 +11,7 @@ import Footer from "../components/Footer/Footer";
 import FilterBar from "../components/Header/FilterBar";
 
 import "./SejourDetails.css";
+import AddFavory from "../components/addFavory/AddFavory";
 
 function SejourDetails() {
   const { id } = useParams();
@@ -35,6 +36,9 @@ function SejourDetails() {
 
           <div className="city-container">
             <h2 className="h2City">{destination.City}</h2>
+            <div className="favory-button-2">
+              <AddFavory destination={destination} />
+            </div>
             <article>{destination.description_city}</article>
             <div className="city-details-container">
               <article>
@@ -55,7 +59,9 @@ function SejourDetails() {
                 <p>Budget hebdomadaire</p>
                 <div className="icon-number-container">
                   <img src={logoBudget} alt="logo bourse" />
-                  <p className="NumberKey">{destination.sejour_price_USD} €</p>
+                  <p className="NumberKey">
+                    {destination.sejour_price_USD / 2} €
+                  </p>
                 </div>
               </article>
               <article>

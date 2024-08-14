@@ -11,10 +11,15 @@
   .header {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 20px;
     align-items: center;
     font-family: "LoveYaLikeASister";
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .logo-homepage {
       max-height: 5rem;
       object-fit: cover;
@@ -23,6 +28,13 @@
     .search-bar {
       padding: 10px;
       font-size: 16px;
+    }
+    .favory-link {
+      margin-right: 3rem;
+      font-size: 1.3rem;
+    }
+    .favory-link:hover {
+      transform: scale(1.5);
     }
   }
   .main-content {

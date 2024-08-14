@@ -8,6 +8,8 @@ export function HackathonProvider({ children }) {
     "Toutes les destinations"
   );
   const [budgetValue, setBudgetValue] = useState(2300);
+  const [favory, setFavory] = useState([]);
+
   const continents = [
     "Amerique du nord",
     "Europe",
@@ -16,6 +18,17 @@ export function HackathonProvider({ children }) {
     "Moyen-Orient",
     "Amérique du Sud/Centrale et Caraïbes",
   ];
+
+  const isNotInfavory = (destination) =>
+    !favory.some((item) => item.id === destination.id);
+
+  const handleFavory = (destination) => {
+    if (isNotInfavory(destination)) {
+      setFavory((prev) => [...prev, destination]);
+    } else {
+      setFavory((prev) => prev.filter((item) => item.id !== destination.id));
+    }
+  };
   return (
     <HackathonContext.Provider
       value={{
@@ -24,6 +37,8 @@ export function HackathonProvider({ children }) {
         continents,
         budgetValue,
         setBudgetValue,
+        favory,
+        handleFavory,
       }}
     >
       {children}
