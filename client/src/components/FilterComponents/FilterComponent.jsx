@@ -3,11 +3,24 @@ import { useHackathon } from "../../context/HackathonContext";
 
 function FilterComponent() {
   const { setContinentFilter, continents, continentFilter } = useHackathon();
-
+  const handleClickFilter1 = (continent) => {
+    setContinentFilter(continent);
+    window.scrollTo({
+      top: 500,
+      behavior: "smooth",
+    });
+  };
+  const handleClickFilter2 = () => {
+    setContinentFilter("Toutes les destinations");
+    window.scrollTo({
+      top: 500,
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="filter-box">
       <input
-        onClick={() => setContinentFilter("Toutes les destinations")}
+        onClick={() => handleClickFilter2()}
         aria-label="Toutes les destinations"
         type="button"
         value="Toutes les destinations"
@@ -19,7 +32,7 @@ function FilterComponent() {
       />
       {continents.map((continent) => (
         <button
-          onClick={() => setContinentFilter(continent)}
+          onClick={() => handleClickFilter1(continent)}
           key={continent}
           aria-label={continent}
           type="button"
