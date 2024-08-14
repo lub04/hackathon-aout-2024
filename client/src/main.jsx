@@ -6,7 +6,7 @@ import App from "./App";
 import SejourDetails from "./pages/SejourDetails";
 import AllDestination from "./pages/AllDestinations/AllDestination";
 import { HackathonProvider } from "./context/HackathonContext";
-
+import Favory from "./pages/favory/Favory";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +19,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/destinations/:id",
-    element: <SejourDetails />
+    element: <SejourDetails />,
+  },
+  {
+    path: "/favoris",
+    element: <Favory />,
   },
 ]);
 

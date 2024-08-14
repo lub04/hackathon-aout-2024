@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useHackathon } from "../../context/HackathonContext";
 import "./FilterBar.css";
 import logo from "../../assets/logoblanc.png";
@@ -15,15 +15,24 @@ function FilterBar() {
   const handleSubmit = (e) => {
     e.preventDefault();
     navigate("/Destinations");
+    window.scrollTo({
+      top: 500,
+      behavior: "smooth",
+    });
   };
 
   return (
     <div className="app-homepage">
       <nav className="header">
-        <img className="logo-homepage" src={logo} alt="Logo" />
-        <a href="/">
-          <h2 className="logo">BougeTonQ.com</h2>
-        </a>
+        <div>
+          <img className="logo-homepage" src={logo} alt="Logo" />
+          <a href="/">
+            <h2 className="logo">BougeTonQ.com</h2>
+          </a>
+        </div>
+        <Link to="/favoris" className="favory-link">
+          Mes favoris !
+        </Link>
       </nav>
       <header className="main-content">
         <h1 className="main-title">Let's trip</h1>
@@ -53,7 +62,7 @@ function FilterBar() {
               value={budgetValue}
               className="input-field"
             />
-            <div>{budgetValue} €</div>
+            <div>{budgetValue / 2} €</div>
           </fieldset>
 
           <button type="submit" className="submit-button">
